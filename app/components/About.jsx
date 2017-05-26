@@ -12,7 +12,7 @@ var About =  (props) => { //refactoring stateless functional component
   return (
     <div>
       <h3>About</h3>
-      <p>Wellcome to About page!</p>
+      <p>Welcome to About page!</p>
     </div>
   )
 };
