@@ -10,7 +10,10 @@ var React = require('react');
 
 var About =  (props) => { //refactoring stateless functional component
   return (
-    <h3>About Component</h3>
+    <div>
+      <h3>About</h3>
+      <p>Wellcome to About page!</p>
+    </div>
   )
 };
 
