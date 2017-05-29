@@ -6,7 +6,7 @@ var WeatherMessage = ({temp,location}) => {
   //var { temp, location} = props; pag var WeatherMessage = (props)
 
   return (
-   <h3>It's it {temp} in the {location}.</h3>
+   <h3 className="text-center">It's it {temp} in the {location}.</h3>
   )
 }
 

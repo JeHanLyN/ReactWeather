@@ -47,11 +47,12 @@ var Weather = React.createClass({
   render: function()  {
     var {isLoading, temp, location} = this.state;
     temp =(temp - 32) / 1.8;
+    temp = temp.toFixed(2);
 
     function renderMessage() { //conditionally render stuff inside in your components pde gawen sa gantong nested function, something you define inside your render function kagaya neto
 
       if (isLoading) {
-        return <h3>Fetching weather...</h3>;
+        return <h3 className="text-center">Fetching weather...</h3>;
       }else if(temp && location){ //kung c temp at location both exists at kung c isLoading ay false\
         return  <WeatherMessage temp={temp} location={location}/>;
       }
@@ -59,7 +60,7 @@ var Weather = React.createClass({
 
     return (
       <div>
-        <h3>Weather Component</h3>
+        <h1 className="text-center">Get Weather</h1>
         <GetWeatherForm onSearch={this.handleSearch} />
         {renderMessage()}
       </div>
